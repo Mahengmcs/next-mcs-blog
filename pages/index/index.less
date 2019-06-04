@@ -1,0 +1,108 @@
+.demo-infinite-container {
+    // border: 1px solid #e8e8e8;
+    // max-width: 960px;
+    border-radius: 4px;
+    overflow: auto;
+
+    margin-top: 5rem;
+}
+.demo-loading-container {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.ant-list{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.list-container{
+    margin-top: 5rem;
+    background-color: #f4f5f5;
+    .m-list-item{
+        padding: 1.5rem 2rem;
+    }
+    .main-container{
+        max-width: 960px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .header{
+        padding-top: 1.4rem;
+        margin-bottom: 1.4rem;
+        margin-right: 21.667rem;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        .top-right{
+            background-color: #fff;
+            margin-left: 50px;
+            height: 50px;
+        }
+    }
+    .container{
+        margin-right: 21.667rem;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+        .authorName{
+            color: #909090;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .articleTitle{
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #2e3135;
+        }
+        .icon-box{
+            display: inline-flex;
+            white-space: nowrap;
+            li{
+                border-radius: 1px;
+                border: 1px solid #edeeef;
+                display: flex;
+                position: relative;
+                align-items: center;
+                height: 2rem;
+                font-size: 1.083rem;
+                line-height: 1;
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 .8rem;
+                    height: 100%;
+                }
+                .count{
+                    color: #929496;
+                    margin-left: .2em;
+                    font-weight: 700;
+                }
+            }
+            .comment{
+                margin-left: -1px;
+            }
+            li:hover {
+                background-color: #e6e6e6;
+            }
+        }
+    }
+    .side{
+        position: absolute;
+        top: 1.4rem;
+        right: 0;
+        width: 20rem;
+        height: 60rem;
+        background-color: #1890ff;
+    }
+    @media (max-width: 960px){
+        .side{
+            display: none;
+        }
+        .container,.header{
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+/*
+ * @Description: 
+ * @Author: edison
+ * @Date: 2019-01-17 15:12:29
+ * @LastEditors: edison
+ * @LastEditTime: 2019-02-14 16:14:57
+ */
+.m_header{
+    background-color: #fff;
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    color: #909090;
+    height: 5rem;
+    z-index: 250;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s;
+    .m_header_container{
+        max-width: 960px;
+        margin: auto;
+        align-items: center;
+        height: 5rem;
+    }
+    .logo{
+        min-width: 98px;
+        margin-right: 2rem;
+        height: 48px;
+        float: left;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        img {
+            width: auto;
+            height: 100%;
+            border-style: none
+        }
+    }
+    .nav-list{
+        float: left;
+        li {
+            float: left;
+            cursor: pointer;
+            line-height: 5rem;
+            padding: 0 1.6rem;
+            a{
+                color: #71777c;
+                font-size: 1.33rem;
+            }
+            .active{
+                color: #007fff;
+            }
+        }
+        li:hover > a{
+            color: #007fff;
+        }
+    }
+    .searchBox{
+        float: left;
+        padding: 0 1.2rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+    }
+    .avatarBox{
+        float: right;
+        padding: 0 1.2rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+    }
+}
